@@ -1,6 +1,5 @@
 # example: docker run net-monitor 
 # example: docker run net-monitor azurecr.io
-FROM mnltejaswini/pepper
-
+FROM alpine:2.6
 ENTRYPOINT [ "/bin/ping", "-c", "3" ]
 CMD ["localhost"]
